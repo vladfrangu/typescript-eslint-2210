@@ -1,0 +1,23 @@
+{
+  "name": "typescript-eslint-2210",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .vue,.ts,.tsx .",
+    "lint:fix": "eslint --fix --ext .vue,.ts,.tsx .",
+    "precommit": "npm run lint",
+    "clean": "npx rimraf .nuxt dist"
+  },
+  "dependencies": {
+    "vue-tsx-support": "^2.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.13",
+    "@typescript-eslint/eslint-plugin": "^3.2.0",
+    "@typescript-eslint/parser": "^3.2.0",
+    "eslint": "^7.2.0",
+    "eslint-config-bamboo": "^5.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "typescript": "^3.9.5"
+  }
+}

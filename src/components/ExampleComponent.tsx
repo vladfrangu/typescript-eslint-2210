@@ -1,0 +1,1 @@
+export const Example = (): JSX.Element => <div>This is, in fact, a div!</div>;

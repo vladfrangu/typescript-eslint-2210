@@ -1,0 +1,38 @@
+{
+	"env": {
+		"node": true
+	},
+	"extends": [
+		"plugin:vue/recommended",
+		"bamboo"
+	],
+	"rules": {
+		"sort-imports": 0,
+		"vue/script-indent": ["error", "tab"],
+		"no-undef": 0,
+		"no-unused-vars": 0,
+		"strict": 0,
+		"vue/html-indent": ["warn", "tab"],
+		"vue/max-attributes-per-line": ["error", {
+			"singleline": 3,
+			"multiline": {
+				"max": 3,
+				"allowFirstLine": true
+			}
+		}],
+		"@typescript-eslint/no-unsafe-assignment": 0,
+		"@typescript-eslint/naming-convention": 0
+	},
+	"parser": "vue-eslint-parser",
+	"parserOptions": {
+		"parser": "@typescript-eslint/parser",
+		"ecmaFeatures": {
+			"jsx": true,
+			"modules": true
+		},
+		"sourceType": "module",
+		"extraFileExtensions": [
+			".vue"
+		]
+	}
+}
